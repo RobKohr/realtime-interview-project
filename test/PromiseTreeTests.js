@@ -2,7 +2,7 @@ var PromiseTree = require("../lib/PromiseTree");
 var expect = require("chai").expect;
 var { basicTree, basicTreeFlattened } = require("../constants/exampleTrees");
 
-describe.only("PromiseTree", function() {
+describe("PromiseTree", function() {
   describe("constructor", function() {
     it("throws an error when the data is not an array", function() {
       expect(function() {
