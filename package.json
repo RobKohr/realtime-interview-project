@@ -8,9 +8,12 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "bluebird": "^3.5.3"
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app"
   }
 }

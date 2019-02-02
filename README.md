@@ -1,5 +1,18 @@
-Introduction
-============
+# Quick run instructions from Rob
+
+To install
+
+- npm install
+
+To start the server on localhost:4000
+
+- npm start
+
+To run unit tests
+
+- npm test
+
+# Introduction
 
 The goal of this project is to create a server that can traverse tree objects
 and return some result. The tree data will be provided to the server in a
@@ -35,9 +48,8 @@ Should return a response with the following body:
 
     HTTP/1.1 200
     Content-Type: application/json
-    
-    ["L1", "R2", "root", "R1"]
 
+    ["L1", "R2", "root", "R1"]
 
 Along with the code to implement the server, please also provide instructions on
 how to start the server so it can be tested.
@@ -47,16 +59,14 @@ but it's not in your best interest to look at code like that. In a followup
 interview we'll start with this codebase as the foundation for more changes. If
 the ideas and code are not your own, it will not go smoothly.
 
+# Variation One
 
-Variation One
-=============
 The server should implement this variation at the `http://localhost:4000/sync`
 endpoint. The tree traversal implementation should use the `lib/SyncTree.js`
 library when iterating over the tree data.
 
+# Variation Two
 
-Variation Two
-=============
 The server should implement this variation at the
 `http://localhost:4000/callback` endpoint. The tree traversal implementation
 should use the `lib/CallbackTree.js` library when iterating over the tree data.
@@ -64,9 +74,8 @@ should use the `lib/CallbackTree.js` library when iterating over the tree data.
 The goal of this variation is to make sure that can work with callback style
 code. Do not turn the callback APIs into promises and work with promises.
 
+# Variation Three
 
-Variation Three
-===============
 The server should implement this variation at the
 `http://localhost:4000/promise` endpoint. The tree traversal implementation
 should use the `lib/PromiseTree.js` library when iterating over the tree data.
